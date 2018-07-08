@@ -1,4 +1,5 @@
 import dataBase.DBControl;
+import logicProgramm.SenderEmail;
 import student.Student;
 
 public class RunTest {
@@ -16,7 +17,8 @@ public class RunTest {
             }else {
 
             }
-
+            SenderEmail snd=new SenderEmail();
+            snd.dispatchEmailStudent("Проверка программы ", "pomortsew@yandex.ru");
 //            System.out.println(DBControl.userVerification("qwerty","qwer"));
 //            System.out.println(DBControl.scaningLogin("qwerty"));
 //            List stud=DBControl.getListStident();
